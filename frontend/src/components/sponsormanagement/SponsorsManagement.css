@@ -1,0 +1,240 @@
+/* Basic Styling */
+.sponsors-management {
+  background-color: #f7f8fa;
+  padding: 20px;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(213, 39%, 95%);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  background-color: hsl(214, 20%, 93%);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: hsl(210, 25%, 92%);
+}
+
+/* Sponsors Overview Cards */
+.sponsors-overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.overview-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  margin-right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.1rem;
+  color: #4d4d4d;
+}
+
+.overview-card h3 {
+  font-weight: 700;
+  color: #d63384;
+}
+
+.overview-card p {
+  color: #495057;
+}
+
+.overview-card:last-child {
+  margin-right: 0;
+}
+
+.overview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Search and Filter Section */
+.search-filter {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input {
+  border: none;
+  margin-left: 10px;
+  flex: 1;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Dropdown (Select) Styling */
+.search-filter select {
+  background-color: white; /* White background for the dropdown */
+  color: #333; /* Dark text color */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-filter select:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-filter select:focus {
+  background-color: #f8f9fa;
+  border-color: #000306; /* Blue border on focus */
+}
+
+/* Sponsors Table */
+.sponsors-table {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.sponsors-table th,
+.sponsors-table td {
+  padding: 15px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.sponsors-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #495057;
+}
+
+.sponsors-table tr:hover td {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+/* Button Styles */
+.add-sponsor,
+.export-reports {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.add-sponsor-button,
+.export-button,
+.report-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-sponsor-button:hover,
+.export-button:hover,
+.report-button:hover {
+  transform: translateY(-3px);
+}
+
+.export-button {
+  background-color: #ffc107;
+}
+
+.export-button:hover {
+  background-color: #e0a800;
+}
+
+.report-button {
+  background-color: #17a2b8;
+}
+
+.report-button:hover {
+  background-color: #138496;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Bootstrap Utilities for Additional Styling */
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn-primary {
+  background-color: hsl(210, 100%, 99%);
+  border-color: #f1f3f5;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: hsl(213, 69%, 97%);
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
